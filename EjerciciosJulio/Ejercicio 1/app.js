@@ -1,8 +1,8 @@
 //input
-var name = document.getElementById("name");
-var sex = document.getElementById("sex");
-var civil = document.getElementById("civil");
-var age = document.getElementById("age");
+var nameC = document.getElementById("name");
+var sexC = document.getElementById("sex");
+var civilC = document.getElementById("civil");
+var ageC = document.getElementById("age");
 //botons
 var guardar = document.getElementById("guardar");
 var btn1 = document.getElementById("btn1");
@@ -12,10 +12,6 @@ var btn4 = document.getElementById("btn4");
 //answer
 var res = document.getElementById("res");
 //functions
-function prueba(){
-	var prueba = name.value;
-	res.value(prueba);
-}
 function GDatos(){
 	var name1 = [];
 	var sex1 = [];
