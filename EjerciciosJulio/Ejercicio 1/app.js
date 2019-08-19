@@ -21,15 +21,21 @@ function GDatos(){
 	var sex1 = [];
 	var civil1 = [];
 	var age1 = [];
-	
-	name1[0].value = nameC.value;
-	sex1[0].value = sexC.value;
-	civil1[0].value = civilC.value;
-	age1[0].value = age1.values;
+	var i = 0; 
+	do{ 	
+		name1[i] = nameC.value;
+		sex1[i] = sexC.value;
+		civil1[i] = civilC.value;
+		age1[i] = ageC.values;
+		i++;
+		nameC.value = "";
+		sexC.value = "";
+		civilC.value = "";
+		ageC.value = "";
 
-	document.write(name1[0],sex1[0],civil1[0],age1[0]);
+		
+	}while( i != 3);
+	alert(name1+sex1+civil1+ageC);
 
-	
 }
-
 guardar.addEventListener('click', GDatos);
