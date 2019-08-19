@@ -12,15 +12,24 @@ var btn4 = document.getElementById("btn4");
 //answer
 var res = document.getElementById("res");
 //functions
+function prueba(){
+	res.value = nameC.value;
+}
+
 function GDatos(){
 	var name1 = [];
 	var sex1 = [];
 	var civil1 = [];
 	var age1 = [];
-	for(var i = 0 ; i > 5 ; i++ ){
-		
-	}
+	
+	name1[0].value = nameC.value;
+	sex1[0].value = sexC.value;
+	civil1[0].value = civilC.value;
+	age1[0].value = age1.values;
 
+	document.write(name1[0],sex1[0],civil1[0],age1[0]);
+
+	
 }
 
-guardar.addEventListener('click', prueba);
+guardar.addEventListener('click', GDatos);
