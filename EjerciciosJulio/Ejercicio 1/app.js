@@ -1,8 +1,4 @@
 //input
-var nameC = document.getElementById("name");
-var sexC = document.getElementById("sex");
-var civilC = document.getElementById("civil");
-var ageC = document.getElementById("age");
 //botons
 var guardar = document.getElementById("guardar");
 var btn1 = document.getElementById("btn1");
@@ -17,25 +13,27 @@ function prueba(){
 }
 
 function GDatos(){
-	var name1 = [];
-	var sex1 = [];
-	var civil1 = [];
-	var age1 = [];
-	var i = 0; 
-	do{ 	
-		name1[i] = nameC.value;
-		sex1[i] = sexC.value;
-		civil1[i] = civilC.value;
-		age1[i] = ageC.values;
-		i++;
-		nameC.value = "";
-		sexC.value = "";
-		civilC.value = "";
-		ageC.value = "";
-
-		
-	}while( i != 3);
-	alert(name1+sex1+civil1+ageC);
-
+	//console.log("capturado");
+	function perona(name,sex,civil,age){
+		this.name =name;
+		this.sex = sex;
+		this.civil = civil;
+		this.age =age;
+	}
+	var nameCature = document.getElementById("name").value;
+	var sexCature = document.getElementById("sex").value;
+	var civilCature = document.getElementById("civil").value;
+	var ageCature = document.getElementById("age").value;
+	
+	 newSubject = new perona(nameCature,sexCature,civilCature,ageCature);
+	//console.log(newSubject);
+	agregar();
 }
+
+var baseDatos= [];
+function agregar(){
+	baseDatos.push(newSubject);
+	console.log(baseDatos);
+}
+
 guardar.addEventListener('click', GDatos);
