@@ -14,6 +14,7 @@ var BDatos=[];
 function guardar(){
 	 BDatos.push(newSubject);
 	 console.log(BDatos);
+	 document.getElementById("tabla").innerHTML+='<tbody> <tr><td>'+newSubject.name+'</td><td>'+newSubject.age+'</td> </tr></tbody>';
 }
 	
 go.addEventListener('click', enviar)
