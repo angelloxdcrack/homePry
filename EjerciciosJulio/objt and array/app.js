@@ -1,4 +1,8 @@
 var go = document.getElementById("Go");
+var btn1 = document.getElementById("Btn1");
+var btn2 = document.getElementById("Btn2");
+var btn3 = document.getElementById("Btn3");
+var btn4 = document.getElementById("Btn4");
 function enviar(){
 	var name = document.getElementById("Name").value;
 	var sex = document.getElementById("Sex").value;
@@ -17,12 +21,18 @@ function enviar(){
 var BDatos=[];	
 function guardar(){
 	 BDatos.push(newSubject);
-	 console.log(BDatos);
 	 document.getElementById("tabla").innerHTML+='<tbody> <tr><td>'+newSubject.name+
 														 '</td><td>'+newSubject.sex+
 														 '</td><td>'+newSubject.age+
 														 '</td><td>'+newSubject.station+
 														 '</td></tr></tbody>';
 }
+
+function BTN1(){
 	
+for(var i = 0 ; i < BDatos.length; i++){
+	 
+}
+}
+btn1.addEventListener('click',BTN1);
 go.addEventListener('click', enviar)
